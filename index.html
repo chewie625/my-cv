@@ -22,7 +22,18 @@
 
   <div class="w3-container w3-card w3-white w3-margin-bottom">
       <div class="w3-quarter">
-           <img src="My Profile.JPG" class="w3-border w3-padding" style="width:80%" alt="Avatar" onclick="changeImage()">
+           <img src="My Profile.JPG" id="profile" class="w3-border w3-padding" style="width:80%" alt="Avatar" onclick="changeImage()">
+              <script>
+                  function changeImage() {
+                      var image = document.getElementById('profile');
+                      if (image.src.match("handsome.jpg")) {
+                          image.src = "My Profile.JPG";
+                      }
+                      else {
+                          image.src = "handsome.jpg";
+                      }
+                  }
+               </script>
         
       </div>
       <div class="w3-margin-top w3-threequarter">
