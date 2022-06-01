@@ -11,6 +11,12 @@
   </head>
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    @media (max-width: 599px) {
+      img {
+        width:30%;
+      }
+    }
+
     </style>
   </head>
 <body class="w3-light-grey">
@@ -21,8 +27,8 @@
   <!-- The Grid -->
 
   <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <div>
-           <img src="My Profile.JPG" id="profile" class="w3-padding w3-quarter" alt="Avatar" onclick="changeImage()">
+      <div class="w3-quarter">
+           <img width="80%" src="My Profile.JPG" id="profile" class="w3-padding" alt="Avatar" onclick="changeImage()">
               <script>
                   function changeImage() {
                       var image = document.getElementById('profile');
